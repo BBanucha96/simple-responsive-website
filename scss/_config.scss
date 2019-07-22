@@ -1,0 +1,29 @@
+$primary-color: #474747;
+$primary-font-color: #ffd500;
+$show-home-image: true;
+$header-photo: url("/dir/img/header-photo.jpg");
+
+@mixin header-image {
+  @if $show-home-image {
+    .header-img {
+      background-image: $header-photo;
+      height: 30rem;
+      width: 100%;
+      background-attachment: fixed;
+      background-size: cover;
+      text-align: center;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        background: rgba($primary-color, 0.5);
+      }
+    }
+  }
+}
