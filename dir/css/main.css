@@ -8,6 +8,7 @@ body {
   background-image: url("/dir/img/background.png");
   background-repeat: repeat;
   font-family: "Roboto Condensed", sans-serif;
+  background-attachment: fixed;
 }
 
 .header-img {
@@ -19,7 +20,7 @@ body {
   text-align: center;
   position: relative;
   margin-bottom: 7rem;
-  border-bottom: solid #ffd500 5px;
+  border-bottom: 2px solid #fff7cc;
 }
 .header-img:after {
   content: "";
@@ -29,7 +30,7 @@ body {
   bottom: 0;
   left: 0;
   display: block;
-  background: rgba(71, 71, 71, 0.5);
+  background: rgba(109, 0, 115, 0.15);
 }
 
 .lg-heading {
@@ -97,7 +98,6 @@ main .section-2 .building:nth-child(3) {
 }
 main .building {
   background-color: #fffbe6;
-  border: solid #ffd500 5px;
   text-align: center;
   box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.48);
 }
@@ -123,9 +123,8 @@ main .section-gap {
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  border-top: 5px solid #ffd500;
-  border-bottom: 5px solid #ffd500;
   margin: 7rem 0;
+  border: 2px solid #fff7cc;
 }
 
 footer {
@@ -133,12 +132,16 @@ footer {
   background-color: #474747;
   height: 4rem;
   margin-top: 7rem;
-  border-top: 5px solid #ffd500;
   padding-top: 0.5rem;
   padding-left: 1rem;
+  position: relative;
+  border-top: 2px solid #fff7cc;
 }
 footer p {
-  color: #ffd500;
+  color: #fff7cc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */

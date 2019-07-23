@@ -10,6 +10,7 @@ body {
   background-image: url("/dir/img/background.png");
   background-repeat: repeat;
   font-family: "Roboto Condensed", sans-serif;
+  background-attachment: fixed;
 }
 
 @include header-image();
@@ -88,7 +89,7 @@ main {
 
   .building {
     background-color: $secondary-color;
-    border: solid $primary-font-color 5px;
+
     text-align: center;
     box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.48);
 
@@ -118,9 +119,8 @@ main {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    border-top: 5px solid $primary-font-color;
-    border-bottom: 5px solid $primary-font-color;
     margin: 7rem 0;
+    border: 2px solid darken($secondary-color, 5);
   }
 }
 
@@ -129,11 +129,15 @@ footer {
   background-color: $primary-color;
   height: 4rem;
   margin-top: 7rem;
-  border-top: 5px solid $primary-font-color;
   padding-top: 0.5rem;
   padding-left: 1rem;
+  position: relative;
+  border-top: 2px solid darken($secondary-color, 5);
 
   p {
-    color: $primary-font-color;
+    color: darken($secondary-color, 5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

@@ -15,7 +15,7 @@ $header-photo: url("/dir/img/header-photo.jpg");
       text-align: center;
       position: relative;
       margin-bottom: 7rem;
-      border-bottom: solid $primary-font-color 5px;
+      border-bottom: 2px solid darken($secondary-color, 5);
 
       &:after {
         content: "";
@@ -25,7 +25,7 @@ $header-photo: url("/dir/img/header-photo.jpg");
         bottom: 0;
         left: 0;
         display: block;
-        background: rgba($primary-color, 0.5);
+        background: rgba(#6d0073, 0.15);
       }
     }
   }
