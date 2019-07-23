@@ -1,5 +1,6 @@
 $primary-color: #474747;
 $primary-font-color: #ffd500;
+$secondary-color: lighten($primary-font-color, 45);
 $show-home-image: true;
 $header-photo: url("/dir/img/header-photo.jpg");
 
@@ -13,6 +14,8 @@ $header-photo: url("/dir/img/header-photo.jpg");
       background-size: cover;
       text-align: center;
       position: relative;
+      margin-bottom: 7rem;
+      border-bottom: solid $primary-font-color 5px;
 
       &:after {
         content: "";

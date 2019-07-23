@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #878787;
+  background-image: url("/dir/img/background.png");
+  background-repeat: repeat;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -17,6 +18,8 @@ body {
   background-size: cover;
   text-align: center;
   position: relative;
+  margin-bottom: 7rem;
+  border-bottom: solid #ffd500 5px;
 }
 .header-img:after {
   content: "";
@@ -54,6 +57,88 @@ body {
   letter-spacing: 1.4rem;
   z-index: 1;
   line-height: 0.8;
+}
+
+main .section-1 {
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "valley museum nikiszowiec";
+  grid-column-gap: 5%;
+  grid-row-gap: 10%;
+}
+main .section-1 .building:nth-child(1) {
+  grid-area: valley;
+}
+main .section-1 .building:nth-child(2) {
+  grid-area: museum;
+}
+main .section-1 .building:nth-child(3) {
+  grid-area: nikiszowiec;
+}
+main .section-2 {
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "legendia silesian-park viewpoint";
+  grid-column-gap: 5%;
+  grid-row-gap: 10%;
+}
+main .section-2 .building:nth-child(1) {
+  grid-area: legendia;
+}
+main .section-2 .building:nth-child(2) {
+  grid-area: silesian-park;
+}
+main .section-2 .building:nth-child(3) {
+  grid-area: viewpoint;
+}
+main .building {
+  background-color: #fffbe6;
+  border: solid #ffd500 5px;
+  text-align: center;
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.48);
+}
+main .building img {
+  max-width: 100%;
+  max-height: 350px;
+  border-bottom: solid #ffd500 5px;
+}
+main .building .building-header {
+  font-size: 2rem;
+  margin: 0.5rem 0px;
+  text-transform: uppercase;
+}
+main .building .building-description {
+  font-size: 1.3rem;
+  padding: 1.2rem;
+  padding-top: 0;
+  text-align: justify;
+}
+main .section-gap {
+  background-image: url("/dir/img/gap.jpg");
+  height: 125px;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  border-top: 5px solid #ffd500;
+  border-bottom: 5px solid #ffd500;
+  margin: 7rem 0;
+}
+
+footer {
+  display: block;
+  background-color: #474747;
+  height: 4rem;
+  margin-top: 7rem;
+  border-top: 5px solid #ffd500;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+footer p {
+  color: #ffd500;
 }
 
 /*# sourceMappingURL=main.css.map */
