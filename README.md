@@ -4,37 +4,18 @@ One page website with some simple effects and responsiveness.
 
 ## Getting Started
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-Website preview: [https://bbanucha96.github.io/simple-responsive-website/]
+Website preview: https://bbanucha96.github.io/simple-responsive-website/
 
 ![](https://i.imgur.com/lrvgyar.png)
 
-## Deployment
+## Built wit usage of:
 
-Add additional notes about how to deploy this on a live system
+* VS Code
+* SASS
 
-## Built With
+## Author
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Brajan Banucha** 
 
 ## License
 
@@ -42,6 +23,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Images used in project
+- https://www.busemprzezswiat.pl/2017/06/katowice-atrakcje/
+- https://portalkomunalny.pl/katowice-beda-gospodarzem-swiatowego-forum-miejskiego-onz-391517/
+- http://www.portal.katowice.pl/
