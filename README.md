@@ -23,7 +23,7 @@ This project is licensed under the MIT License - contact for more details
 
 ## Acknowledgments
 
-Images used in project
+Images used in project:
 - https://www.busemprzezswiat.pl/2017/06/katowice-atrakcje/
 - https://portalkomunalny.pl/katowice-beda-gospodarzem-swiatowego-forum-miejskiego-onz-391517/
 - http://www.portal.katowice.pl/
