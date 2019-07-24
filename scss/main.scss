@@ -43,14 +43,14 @@ body {
 }
 
 main {
+  margin: auto;
   .section-1 {
     display: grid;
     max-width: 1200px;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "valley museum nikiszowiec";
-    grid-column-gap: 5%;
-    grid-row-gap: 10%;
+    grid-column-gap: 3rem;
 
     .building:nth-child(1) {
       grid-area: valley;
@@ -71,8 +71,6 @@ main {
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "legendia silesian-park viewpoint";
-    grid-column-gap: 5%;
-    grid-row-gap: 10%;
 
     .building:nth-child(1) {
       grid-area: legendia;
@@ -89,9 +87,10 @@ main {
 
   .building {
     background-color: $secondary-color;
-
+    max-width: 321px;
     text-align: center;
     box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.48);
+    margin: auto;
 
     img {
       max-width: 100%;
@@ -127,12 +126,14 @@ main {
 footer {
   display: block;
   background-color: $primary-color;
-  height: 4rem;
+  height: 6rem;
   margin-top: 7rem;
   padding-top: 0.5rem;
   padding-left: 1rem;
   position: relative;
   border-top: 2px solid darken($secondary-color, 5);
+  width: 100%;
+  overflow: hidden;
 
   p {
     color: darken($secondary-color, 5);
@@ -140,4 +141,18 @@ footer {
     top: 50%;
     transform: translateY(-50%);
   }
+
+  a {
+    color: darken($secondary-color, 5);
+    text-decoration: none;
+  }
+  a:visited {
+    color: darken($secondary-color, 5);
+    text-decoration: none;
+  }
+  a:hover {
+    color: $primary-font-color;
+  }
 }
+
+@import "mobile";
