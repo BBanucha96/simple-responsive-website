@@ -5,14 +5,14 @@
 }
 
 body {
-  background-image: url("/dir/img/background.png");
+  background-image: url("../img/background.png");
   background-repeat: repeat;
   font-family: "Roboto Condensed", sans-serif;
   background-attachment: fixed;
 }
 
 .header-img {
-  background-image: url("img/header-photo.jpg");
+  background-image: url("../img/header-photo.jpg");
   height: 30rem;
   width: 100%;
   background-attachment: fixed;
@@ -120,7 +120,7 @@ main .building .building-description {
   text-align: justify;
 }
 main .section-gap {
-  background-image: url("img/gap.jpg");
+  background-image: url("../img/gap.jpg");
   height: 125px;
   background-attachment: fixed;
   background-size: cover;
