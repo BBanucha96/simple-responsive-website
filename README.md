@@ -5,6 +5,7 @@ One page website with some simple effects and responsiveness.
 ## Getting Started
 
 Website preview: https://bbanucha96.github.io/simple-responsive-website/
+
 ![](https://i.imgur.com/OEsW8xg.png)
 
 ## Built with usage of:
