@@ -19,7 +19,7 @@ Website preview: https://bbanucha96.github.io/simple-responsive-website/
 
 ## License
 
-This project is licensed under the MIT License - contact for more details
+This project is licensed under the [MIT License](LICENSE)
 
 ## Acknowledgments
 
