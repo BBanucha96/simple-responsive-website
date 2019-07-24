@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/dir/img/background.png");
+  background-repeat: repeat;
+  font-family: "Roboto Condensed", sans-serif;
+  background-attachment: fixed;
+}
+
+.header-img {
+  background-image: url("/dir/img/header-photo.jpg");
+  height: 30rem;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-bottom: 7rem;
+  border-bottom: 2px solid #fff7cc;
+}
+.header-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: rgba(109, 0, 115, 0.15);
+}
+
+.lg-heading {
+  text-transform: uppercase;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffd500;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+  z-index: 1;
+  line-height: 0.65;
+}
+
+.sm-heading {
+  text-transform: uppercase;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fffbe6;
+  font-size: 2rem;
+  letter-spacing: 1.4rem;
+  z-index: 1;
+  line-height: 0.8;
+}
+
+main {
+  margin: auto;
+}
+main .section-1 {
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "valley museum nikiszowiec";
+  grid-column-gap: 3rem;
+}
+main .section-1 .building:nth-child(1) {
+  grid-area: valley;
+}
+main .section-1 .building:nth-child(2) {
+  grid-area: museum;
+}
+main .section-1 .building:nth-child(3) {
+  grid-area: nikiszowiec;
+}
+main .section-2 {
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "legendia silesian-park viewpoint";
+}
+main .section-2 .building:nth-child(1) {
+  grid-area: legendia;
+}
+main .section-2 .building:nth-child(2) {
+  grid-area: silesian-park;
+}
+main .section-2 .building:nth-child(3) {
+  grid-area: viewpoint;
+}
+main .building {
+  background-color: #fffbe6;
+  max-width: 321px;
+  text-align: center;
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.48);
+  margin: auto;
+}
+main .building img {
+  max-width: 100%;
+  max-height: 350px;
+  border-bottom: solid #ffd500 5px;
+}
+main .building .building-header {
+  font-size: 2rem;
+  margin: 0.5rem 0px;
+  text-transform: uppercase;
+}
+main .building .building-description {
+  font-size: 1.3rem;
+  padding: 1.2rem;
+  padding-top: 0;
+  text-align: justify;
+}
+main .section-gap {
+  background-image: url("/dir/img/gap.jpg");
+  height: 125px;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  margin: 7rem 0;
+  border: 2px solid #fff7cc;
+}
+
+footer {
+  display: block;
+  background-color: #474747;
+  height: 6rem;
+  margin-top: 7rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  border-top: 2px solid #fff7cc;
+  width: 100%;
+  overflow: hidden;
+}
+footer p {
+  color: #fff7cc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer a {
+  color: #fff7cc;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #fff7cc;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffd500;
+}
+
+@media screen and (min-width: 1171px) {
+  main .section-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main .section-1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "valley museum" "nikiszowiec nikiszowiec";
+    grid-row-gap: 5rem;
+    max-width: 1000px;
+  }
+  main .section-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "legendia silesian-park" "viewpoint viewpoint";
+    grid-row-gap: 5rem;
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .lg-heading {
+    font-size: 4em;
+  }
+
+  .sm-heading {
+    font-size: 1.5em;
+  }
+
+  main .section-1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "valley" "museum" "nikiszowiec";
+    grid-row-gap: 5rem;
+    max-width: 600px;
+    grid-row-gap: 3rem;
+  }
+  main .section-2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "legendia" "silesian-park" "viewpoint";
+    grid-row-gap: 5rem;
+    max-width: 600px;
+    grid-row-gap: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lg-heading {
+    font-size: 3.4em;
+  }
+
+  .sm-heading {
+    font-size: 1em;
+  }
+
+  main .section-1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "valley" "museum" "nikiszowiec";
+    grid-row-gap: 5rem;
+    grid-row-gap: 3rem;
+  }
+  main .section-2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "legendia" "silesian-park" "viewpoint";
+    grid-row-gap: 5rem;
+    grid-row-gap: 3rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
